@@ -11,7 +11,7 @@
   text-transform: capitalize;
 }
 .activio{
-    height: 1230px;
+    height: 990px;
     
 }
 .containerr{
@@ -30,7 +30,7 @@
     
 }
 .containerr .slide-containerr .slide .coontent{
-    flex: 1 1 350px;
+    flex: 1 1 400px;
     animation: slideContent .4s linear .6s backwards;
 }
 @keyframes slideContent{
@@ -46,7 +46,7 @@
     width: 100%;
     margin: 10% auto;
     display: flex;
-    width: 600px;
+    width: 400px;
     animation: slideImage .4s linear;
     margin-top: 10px;
     
@@ -100,14 +100,14 @@
     border-left: 8px solid #fff;
     transform: rotate(316deg);
     color: #fff;
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 30px;
     line-height: 50px;
     font-size: 25px;
     text-align: center;
     cursor: pointer;
     font-weight: bolder;
-    margin-left: 40px;
+    margin-left: 25px;
 }
        
 .containerr #next{
@@ -117,14 +117,14 @@
     border-left: 8px solid #fff;
     transform: rotate(128deg);
     color: #fff;
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 30px;
     line-height: 50px;
     font-size: 25px;
     text-align: center;
     cursor: pointer;
     font-weight: bolder;
-    margin-right: 120px;
+    margin-right: 80px;
    
 }
 .containerr #prev:hover,
