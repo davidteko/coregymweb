@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+    --first-color: #253045;
+    --second-color: green;
+    --third-color: #022e10;
+    --text-color: #d1d5db;
+
+    --box-shadow: 0 5px 25px rgb(2,2,2, 0.1);
+    --text-shadow: 0 5px 25px rgb(2,2,2, 0.1);
+  }
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+  }
+  body{
+    background: var(--second-color);
+  }
+  section {
+    position:relative;
+    
+    transition: 0.5s ease;
+  }
+  .main-containerr{
+    position: relative;
+  }
+  .tab-nav-bar{
+    position: relative;
+    margin: 65px 10px 40px 10px;
+  }
+
+   .tab-navigation{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: fit-content;
+    margin: 0 auto;
+}
+  
+  .tab-menu{
+    color: var(--text-color);
+    list-style: none;
+    background: var(--third-color);
+    max-width: 490px;
+    padding: 10px;
+    white-space: nowrap;
+    border-radius: 1px solid var(--third-color);
+    border-radius: 50px;
+    box-shadow: var(--box-shadow);
+    overflow-x: auto;
+    user-select: none;
+    transition: 0.3s ease;
+  }
+  .tab-btn:hover{
+    background: var(--third-color);
+  }
+  .tab-menu::-webkit-scrollbar{
+    display: none;
+  }
+  .tab-btn{
+    color: var(--text-color);
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 400;
+    margin: 0 2px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background: var(--first-color);
+    cursor: pointer;
+    user-select: none;
+  }
+  /* Existing CSS code above */
+
+@media screen and (max-width: 600px) {
+  /* Adjustments for smaller screens */
+
+  .tab-menu {
+    max-width: 100%; /* Expand to full width */
+    border-radius: 0; /* Remove border-radius */
+    box-shadow: none; /* Remove box-shadow */
+    white-space: normal; /* Allow text to wrap */
+    padding: 10px 0; /* Adjust padding */
+  }
+
+  .tab-btn {
+    margin: 5px; /* Reduce margin for spacing */
+    padding: 5px 10px; /* Adjust padding */
+    font-size: 0.9em; /* Reduce font size */
+  }
+
+  .tab-nav-bar {
+    margin: 20px 10px; /* Adjust margin */
+  }
+}
+
+  

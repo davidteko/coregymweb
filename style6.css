@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'poppins',sans-serif;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.activio{
+    height: 1230px;
+    
+}
+.containerr{
+    position: relative;
+    
+}
+
+.containerr .slide-containerr .slide{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px 9%;
+    padding-bottom: 70px;
+    
+}
+.containerr .slide-containerr .slide .coontent{
+    flex: 1 1 350px;
+    animation: slideContent .4s linear .6s backwards;
+}
+@keyframes slideContent{
+    0%{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+}
+.containerr .slide-containerr .slide .image{
+    flex: 1 1 500px;
+}
+.containerr .slide-containerr .slide .image img{
+    width: 100%;
+    margin: 10% auto;
+    display: flex;
+    width: 600px;
+    animation: slideImage .4s linear;
+    margin-top: 10px;
+    
+}
+@keyframes slideImage{
+    0%{
+        opacity: 0;
+        transform: translatey(-50px);
+    }
+}
+.containerr .slide-containerr .slide .coontent h3{
+    font-size: 45px;
+    
+    color: #c67d07;
+}
+.containerr .slide-containerr .slide .coontent p{
+    font-size: 16px;
+    color: #fff;
+    padding: 10px 0;
+}
+.containerr .slide-containerr .slide .coontent .btn{
+    margin-top: 10px;
+    position: relative;
+    color: #fff;
+    font-size: 1.4rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s ease;
+    background: #c67d07;
+    padding: 15px 35px;
+    font-weight: 800;
+    border-radius: 12px;
+}
+.containerr .slide-containerr .slide .coontent .btn:hover{
+    background: black;
+}
+.containerr .slide-containerr{
+    display: none;
+}
+.containerr .slide-containerr.active{
+    display: block;
+}
+.containerr .slide-containerr:nth-child(1) .slide{
+    background: linear-gradient(90deg, );
+}
+    
+.containerr #prev{
+    position: absolute;
+    top: 50%;
+    border-top: 8px solid #fff;
+    border-left: 8px solid #fff;
+    transform: rotate(316deg);
+    color: #fff;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    font-size: 25px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bolder;
+    margin-left: 40px;
+}
+       
+.containerr #next{
+    position: absolute;
+    top: 50%;
+    border-top: 8px solid #fff;
+    border-left: 8px solid #fff;
+    transform: rotate(128deg);
+    color: #fff;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    font-size: 25px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bolder;
+    margin-right: 120px;
+   
+}
+.containerr #prev:hover,
+.containerr #next:hover{
+    border-top: 8px solid black;
+    border-left: 8px solid black;
+}
+.containerr #prev{
+left: 20px;
+}
+.containerr #next{
+    right: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    * {
+      font-size: 16px; /* Adjust font size for better readability */
+    }
+  
+    .activio {
+      height: auto; /* Remove fixed height */
+    }
+  
+    .containerr .slide-containerr .slide {
+      padding: 20px 5%; /* Adjust padding for smaller screens */
+    }
+  
+    .containerr .slide-containerr .slide .coontent {
+      flex: 1 1 100%; /* Make content take full width */
+      animation: none; /* Disable animations on small screens */
+    }
+  
+    .containerr .slide-containerr .slide .image {
+      flex: 1 1 100%; /* Make image take full width */
+    }
+  
+    .containerr .slide-containerr .slide .image img {
+      width: 100%;
+      margin: 10% auto 10px; /* Adjust margins and remove animation */
+    }
+  
+    .containerr .slide-containerr .slide .coontent h3 {
+      font-size: 30px; /* Adjust heading font size */
+    }
+  
+    .containerr .slide-containerr .slide .coontent .btn {
+      margin-top: 10px;
+      font-size: 1.2rem; /* Adjust button font size */
+      padding: 10px 25px; /* Adjust button padding */
+    }
+  
+    .containerr #prev {
+        display: none;
+      margin-left: 10px; /* Adjust margin for previous button */
+    }
+  
+    .containerr #next {
+        display: none;
+      margin-right: 10px; /* Adjust margin for next button */
+    }
+  }

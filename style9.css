@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+    background: rgb(61, 155, 61);
+    font-size: 25px;
+}
+.ccontainer{
+    width: 80%;
+    margin: 50px auto;
+}
+.register-box{
+    background: #fff;
+    display: flex;
+}
+.register{
+    flex-basis: 60%;
+    padding: 40px 60px;
+}
+.payment{
+    flex-basis: 40%;
+    padding: 40px;
+    color: #fff;
+    background: rgb(1, 98, 1);
+}
+h1{
+    margin-bottom: 30px;
+    color: #fff;
+}
+.input-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.input-row .input-group{
+    flex-basis: 45%;
+}
+input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding-bottom: 5px;
+    height: 28px;
+}
+button{
+    background: rgb(1, 98, 1);
+    width: 180px;
+    border: none;
+    outline: none;
+    color: #fff;
+    height: 55px;
+    border-radius: 30px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.register h3{
+    color: rgb(1, 98, 1);
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+form{
+    color: rgb(1, 98, 1);
+}
+tr td:first-child{
+    padding-right: 20px;
+}
+tr td{
+    padding-top: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+      font-size: 20px; /* Adjust font size for better readability on small screens */
+    }
+  
+    .ccontainer {
+      width: 100%; /* Make the container full width */
+      padding: 20px; /* Add some padding for spacing */
+      margin: 20px auto; /* Adjust margin for centering */
+    }
+  
+    .register-box {
+      flex-direction: column; /* Stack the register and payment sections vertically */
+    }
+  
+    .register,
+    .payment {
+    
+      flex-basis: auto; /* Allow content to determine width */
+      padding: 20px; /* Add padding to both sections */
+    }
+  
+    .payment {
+      background: rgb(1, 98, 1); /* Keep the background color */
+    }
+  
+    h1 {
+      font-size: 24px; /* Slightly reduce the heading font size */
+    }
+  
+    .input-row {
+      flex-direction: column; /* Stack input rows vertically */
+      margin-bottom: 10px; /* Reduce the margin between rows */
+    }
+  
+    .input-row .input-group {
+      flex-basis: 100%; /* Make input groups full width */
+    }
+  
+    input {
+      padding-bottom: 5px;
+      height: auto; /* Let input height adjust based on content */
+    }
+  
+    button {
+      width: 100%; /* Make the button full width */
+      margin-top: 20px;
+      border-radius: 30px;
+    }
+  
+    .register h3 {
+      font-size: 20px; /* Reduce heading font size */
+      margin-bottom: 20px; /* Reduce margin */
+    }
+  
+    form {
+      color: rgb(1, 98, 1); /* Set text color to white for better contrast */
+    }
+  
+    tr td:first-child {
+      padding-right: 0; /* Remove right padding for the first column */
+    }
+  
+    tr td {
+      padding-top: 10px; /* Reduce top padding */
+      padding-bottom: 10px; /* Add bottom padding for better spacing */
+    }
+  }
