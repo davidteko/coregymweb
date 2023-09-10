@@ -18,7 +18,7 @@ body{
 
 .map .map__content .location {
     background: #c67d07;
-    padding: 100px 45px;
+    padding: 88px 45px;
 }
 
 .map .map__content .location h2 {
@@ -53,7 +53,7 @@ body{
 
 .map .map__content .location .loc i {
     color: #022e10;
-    font-size: 50px;
+    font-size: 38px;
     margin-right: 30px;
 }
 
