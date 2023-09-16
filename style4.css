@@ -9,7 +9,8 @@ body{
 }
 .sectiogallery{
   background-color:  #022e10;
-  height: 1300px;
+  height: 1000px auto;
+  
 }
 .section__header{
   margin-top: 1px;

@@ -123,14 +123,63 @@ header {
     padding: 100px 200px;
   }
 
+ .whatsapp-float{
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 40px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+ }
+ .whatsapp-icon{
+  margin-top: 6px;
+ }
+ .facebook-float{
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 120px;
+  right: 40px;
+  background-color: rgb(74, 74, 225);
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 40px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+ }
+
   .home{
     position: relative;
     width: 100%;
+    height: auto;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
     background-color: rgb(61, 155, 61);
+  }
+  .title{
+
+    -webkit-text-stroke: 2px #c67d07 ;
+    color: transparent;
+    background-image: linear-gradient(#c67d07,#9c660f);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -780px 0;
+    animation: backcolor 7s linear infinite alternate;
+
+  }
+  @keyframes backcolor {
+    100%{
+      background-position: 0px 0;
+    }
   }
 
   .home .content{
@@ -425,3 +474,5 @@ header {
     margin-left: -120px; /* Adjusted margin */
   }
 }
+
+
