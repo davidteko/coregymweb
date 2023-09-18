@@ -39,13 +39,17 @@ h1{
 .input-row .input-group{
     flex-basis: 45%;
 }
+
 input{
+    height: 100%;
     width: 100%;
     border: none;
     border-bottom: 1px solid #ccc;
     outline: none;
     padding-bottom: 5px;
     height: 28px;
+    font-size: 18px;
+    text-transform: uppercase;
 }
 button{
     background: rgb(1, 98, 1);
