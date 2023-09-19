@@ -167,7 +167,7 @@ header {
   }
   .title{
 
-    -webkit-text-stroke: 2px #c67d07 ;
+    -webkit-text-stroke: 2px #fff ;
     color: transparent;
     background-image: linear-gradient(#c67d07,#9c660f);
     background-repeat: no-repeat;
@@ -309,7 +309,7 @@ header {
     cursor: pointer;
   }
   iframe{
-    width: 370px;
+    width: 315px;
     height: 250px;
   }
   img {
@@ -380,7 +380,7 @@ header {
   .home .content a {
     padding: 10px 20px;
     font-size: 1.5rem;
-    margin-left: -180px;
+    margin-left: -120px;
   }
 
   
