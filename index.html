@@ -177,20 +177,20 @@
                     <img src="./images/back.png" id="backBtn">
                 <diV class="gallery">
                   <div>
-                    <span><img src="./images/1.jpg"></span>
-                    <span><img src="./images/2.jpg"></span>
-                    <span><img src="./images/3.jpg"></span>
+                    <span><img src="./images/_DSC4918.jpg"></span>
+                    <span><img src="./images/_DSC4826.jpg"></span>
+                    <span><img src="./images/_DSC4927.jpg"></span>
                     <span><img src="./images/14.jpg"></span>
-                    <span><img src="./images/15.jpg"></span>
+                    <span><img src="./images/_DSC5051.jpg"></span>
                     <span><img src="./images/17.jpg"></span>
                   </div>
                   <div>
-                    <span><img src="./images/7.jpg"></span>
-                    <span><img src="./images/9.jpg"></span>
+                    <span><img src="./images/_DSC4848.jpg"></span>
+                    <span><img src="./images/_DSC5095.jpg"></span>
                     <span><img src="./images/11.jpg"></span>
-                    <span><img src="./images/4.jpg"></span>
-                    <span><img src="./images/12.jpg"></span>
-                    <span><img src="./images/13.jpg"></span>
+                    <span><img src="./images/_DSC4944.jpg"></span>
+                    <span><img src="./images/_DSC5018.jpg"></span>
+                    <span><img src="./images/_DSC4886.jpg"></span>
                   </div>
                 </diV>
                     <img src="./images/next.png" id="nextBtn">
@@ -221,7 +221,7 @@
                              <a href="#" class="btn">Join Us Now</a>
                             </div>
                             <div class="image">
-                              <img src="./images/17.jpg">
+                              <img src="./images/_DSC4939.jpg">
                             </div>
                         </div>
                         </div>
@@ -247,7 +247,7 @@
                                      <a href="#" class="btn">Join Us Now</a>
                                     </div>
                                     <div class="image">
-                                      <img src="./images/indoorexercise.jpg">
+                                      <img src="./images/_DSC5018.jpg">
                                     </div>
                                 </div>
                                 </div>  
@@ -366,32 +366,32 @@
               
         <script src="./app.js"></script>
         <script>
-            let scrollContainers = document.querySelectorAll(".gallery");
-            let backBtn = document.getElementById("backBtn");
-            let nextBtn = document.getElementById("nextBtn");
-        
-            scrollContainers.forEach(scrollContainer => {
-                scrollContainer.addEventListener("wheel", (evt) => {
-                    evt.preventDefault();
-                    scrollContainer.scrollLeft += evt.deltaY;
-                    scrollContainer.style.scrollBehavior ="auto";
-                });
-            });
-        
-            nextBtn.addEventListener("click", () => {
-                scrollContainers.forEach(scrollContainer => {
-                    scrollContainer.style.scrollBehavior ="smooth";
-                    scrollContainer.scrollLeft += 300;
-                });
-            });
-        
-            backBtn.addEventListener("click", () => {
-                scrollContainers.forEach(scrollContainer => {
-                    scrollContainer.style.scrollBehavior ="smooth";
-                    scrollContainer.scrollLeft -= 300;
-                });
-            });
-        </script>
+          let scrollContainers = document.querySelectorAll(".gallery");
+          let backBtn = document.getElementById("backBtn");
+          let nextBtn = document.getElementById("nextBtn");
+      
+          scrollContainers.forEach(scrollContainer => {
+              scrollContainer.addEventListener("wheel", (evt) => {
+                  evt.preventDefault();
+                  scrollContainer.scrollLeft += evt.deltaY;
+                  scrollContainer.style.scrollBehavior ="auto";
+              });
+          });
+      
+          nextBtn.addEventListener("click", () => {
+              scrollContainers.forEach(scrollContainer => {
+                  scrollContainer.style.scrollBehavior ="smooth";
+                  scrollContainer.scrollLeft += 220;
+              });
+          });
+      
+          backBtn.addEventListener("click", () => {
+              scrollContainers.forEach(scrollContainer => {
+                  scrollContainer.style.scrollBehavior ="smooth";
+                  scrollContainer.scrollLeft -= 220;
+              });
+          });
+      </script>
         <script>
             let sliddes = document.querySelectorAll('.slide-containerr');
             let index = 0;
