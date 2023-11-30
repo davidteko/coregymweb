@@ -58,6 +58,7 @@ body{
 
 /* Responsive CSS for screens up to 600px */
 @media screen and (max-width: 600px) {
+
   .sectiogallery {
     height: auto;
   }
@@ -66,7 +67,8 @@ body{
     display: block;
     width: 100%;
     overflow-x: auto;
-    white-space: nowrap;
+    white-space: wrapped;
+    
   }
 
   .gallery div {
